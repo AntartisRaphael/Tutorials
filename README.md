@@ -61,9 +61,11 @@ A neural network is made of layers:
 Input → Hidden Layers → Output
 Each layer learns more abstract features
 
-![Structure of a neural network](https://github.com/user-attachments/assets/35815ffc-db8a-40ca-98c0-98a7d18cb726)
+<img src="https://github.com/user-attachments/assets/35815ffc-db8a-40ca-98c0-98a7d18cb726" 
+     alt="Structure of a neural network" 
+     width="50%"/>
 
-*Figure 2: Structure of a neural network. Image from Wikipedia.*
+<p><em>Figure 2: Structure of a neural network. Image from Wikipedia.</em></p>
 
 Simple Example Using PyTorch
 
@@ -112,8 +114,8 @@ for images, labels in train_loader:
     optimizer.step()
 
 print("Training step complete!")
-
-## Example: Model Prediction
+```
+## Example Code: Model Prediction
 
 Here's how to test the trained model on a single image:
 
@@ -130,8 +132,8 @@ with torch.no_grad():
 print(f"True label: {sample_label.item()}")
 print(f"Predicted: {prediction}")
 print(f"Confidence: {probabilities[prediction]:.2%}")
-
-## Model Prediction Example
+```
+## Model Prediction Results Example
 
 After training, the model correctly identifies handwritten digits:
 
