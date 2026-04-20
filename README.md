@@ -115,7 +115,7 @@ for images, labels in train_loader:
 
 print("Training step complete!")
 ```
-## Example Code: Model Prediction
+## 6. Example Code: Model Prediction
 
 Here's how to test the trained model on a single image:
 
@@ -133,11 +133,11 @@ print(f"True label: {sample_label.item()}")
 print(f"Predicted: {prediction}")
 print(f"Confidence: {probabilities[prediction]:.2%}")
 ```
-## Model Prediction Results Example
+## 7. Model Prediction Results Example
 
 After training, the model correctly identifies handwritten digits:
 
-![Model prediction output](<img width="766" height="790" alt="image" src="https://github.com/user-attachments/assets/e9947e4a-4b1f-442e-ae4d-96a7a6efc589" />)
+![Model prediction output](https://github.com/user-attachments/assets/e9947e4a-4b1f-442e-ae4d-96a7a6efc589)
 
 *Example images with their predictions: the model gets 8 out of 9 correct.*
 
