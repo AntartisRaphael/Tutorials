@@ -43,8 +43,8 @@ Neural networks are inspired by the brain.
 | Axon sends output | Activation function |
 
 ![Biological Neuron](https://github.com/user-attachments/assets/1c7b8466-813c-4ed8-836d-3d649ddf902f)
-
 *Figure 2: Biological Neuron Structure. Source: [Wikipedia](https://en.wikipedia.org/wiki/Biological_neuron_model).*
+
 ---
 
 ## 4. The Artificial Neuron
@@ -162,3 +162,11 @@ Repeat many times.
 <img width="720" height="398" alt="Backpropagation in Neural Networks" src="https://github.com/user-attachments/assets/a40f9271-c48c-47be-be7c-1702cee8cfae" />
 
 *Backpropagation in Neural Networks. Source: [Analytics Vidhya](https://www.analyticsvidhya.com/blog/2023/01/gradient-descent-vs-backpropagation-whats-the-difference/).*
+
+## 10. In Summary
+
+Neural networks:
+- Are inspired by the brain
+- Learn from data instead of rules
+- Use layers of simple units
+- Can model complex relationships
