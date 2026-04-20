@@ -54,11 +54,12 @@ A typical CNN looks like:
 
 ```mermaid
 graph TD
-    A[Input Image] --> B[Convolution Layer]
-    B --> C[Activation (ReLU)]
-    C --> D[Pooling Layer]
-    D --> E[Fully Connected Layer]
-    E --> F[Output]
+    A["Input Image (1×28×28)"] --> B["Conv2D (16 filters, 3×3) → (16×26×26)"]
+    B --> C["ReLU → (16×26×26)"]
+    C --> D["MaxPool (2×2) → (16×13×13)"]
+    D --> E["Flatten → (2704)"]
+    E --> F["Fully Connected → (10)"]
+    F --> G["Output (10 classes)"]
 ```
 <div align="center">
 
