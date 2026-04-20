@@ -27,6 +27,9 @@ Example:
 - Input: image pixels  
 - Output: "cat" or "dog"
 
+![Example of Image classification](https://github.com/user-attachments/assets/d6471969-5131-4202-9f00-1cc6619a814a)
+*Figure 1: Simple Neural Network for classification of a dog image. Source: [LearnOpenCV](https://learnopencv.com/how-to-train-neural-networks-for-beginners/).*
+
 ---
 
 ## 3. Biological Inspiration
@@ -39,6 +42,9 @@ Neural networks are inspired by the brain.
 | Cell body processes | Weighted sum |
 | Axon sends output | Activation function |
 
+![Biological Neuron](https://github.com/user-attachments/assets/1c7b8466-813c-4ed8-836d-3d649ddf902f)
+
+*Figure 2: Biological Neuron Structure. Source: [Wikipedia](https://en.wikipedia.org/wiki/Biological_neuron_model).*
 ---
 
 ## 4. The Artificial Neuron
@@ -141,7 +147,7 @@ After training, the model correctly identifies handwritten digits:
 
 *Example images with their predictions: the model gets 8 out of 9 correct.*
 
-7. How Do Neural Networks Learn?
+## 8. How Do Neural Networks Learn?
 
 Learning = adjusting weights.
 
