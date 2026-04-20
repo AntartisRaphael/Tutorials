@@ -61,6 +61,10 @@ A neural network is made of layers:
 Input → Hidden Layers → Output
 Each layer learns more abstract features
 
+![Structure of a neural network](https://github.com/user-attachments/assets/35815ffc-db8a-40ca-98c0-98a7d18cb726)
+
+*Figure 2: Structure of a neural network. Image from Wikipedia.*
+
 Simple Example Using PyTorch
 
 This example shows a small neural network that learns to recognize handwritten digits from the MNIST dataset.
@@ -108,3 +112,45 @@ for images, labels in train_loader:
     optimizer.step()
 
 print("Training step complete!")
+
+## Example: Model Prediction
+
+Here's how to test the trained model on a single image:
+
+```python
+model.eval()
+sample_image, sample_label = next(iter(train_loader))
+sample_image = sample_image[0]
+
+with torch.no_grad():
+    output = model(sample_image.unsqueeze(0))
+    prediction = torch.argmax(output, dim=1).item()
+    probabilities = torch.softmax(output, dim=1).squeeze().numpy()
+
+print(f"True label: {sample_label.item()}")
+print(f"Predicted: {prediction}")
+print(f"Confidence: {probabilities[prediction]:.2%}")
+
+## Model Prediction Example
+
+After training, the model correctly identifies handwritten digits:
+
+![Model prediction output](<img width="766" height="790" alt="image" src="https://github.com/user-attachments/assets/e9947e4a-4b1f-442e-ae4d-96a7a6efc589" />)
+
+*Example images with their predictions: the model gets 8 out of 9 correct.*
+
+7. How Do Neural Networks Learn?
+
+Learning = adjusting weights.
+
+Steps:
+1. Make a prediction
+2. Compare with correct answer
+3. Compute error
+4. Update weights to reduce error
+
+Repeat many times.
+
+<img width="720" height="398" alt="Backpropagation in Neural Networks" src="https://github.com/user-attachments/assets/a40f9271-c48c-47be-be7c-1702cee8cfae" />
+
+*Backpropagation in Neural Networks. Source: [Analytics Vidhya](https://www.analyticsvidhya.com/blog/2023/01/gradient-descent-vs-backpropagation-whats-the-difference/).*
