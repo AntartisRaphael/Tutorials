@@ -1,0 +1,7 @@
+{
+  "Dimentions": 128,
+  "test_auc_overall": 0.9121972492994033,
+  "test_aupr_overall": 0.9028123751959669,
+  "biomarker-connects-disease_auc": 0.9121972492994033,
+  "biomarker-connects-disease_aupr": 0.9028123751959669
+}
