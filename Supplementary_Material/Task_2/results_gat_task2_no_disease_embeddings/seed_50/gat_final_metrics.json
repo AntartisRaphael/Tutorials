@@ -1,0 +1,11 @@
+{
+  "seed": 50,
+  "test_auc_overall": 0.9386027286391491,
+  "test_aupr_overall": 0.9312228725742414,
+  "chemical-connects-disease_auc": 0.9253532391362305,
+  "chemical-connects-disease_aupr": 0.9334045207778562,
+  "genetic-connects-disease_auc": 0.9506140722755361,
+  "genetic-connects-disease_aupr": 0.9269137077037712,
+  "protein-connects-disease_auc": 0.8928199791883455,
+  "protein-connects-disease_aupr": 0.8959649282532035
+}
