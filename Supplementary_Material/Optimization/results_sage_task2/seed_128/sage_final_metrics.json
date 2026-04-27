@@ -1,0 +1,11 @@
+{
+  "Dimentions": 128,
+  "test_auc_overall": 0.9142162603070513,
+  "test_aupr_overall": 0.9117252239620672,
+  "chemical-connects-disease_auc": 0.9032009849184365,
+  "chemical-connects-disease_aupr": 0.9220726269762535,
+  "genetic-connects-disease_auc": 0.9504181600955794,
+  "genetic-connects-disease_aupr": 0.9364644351679217,
+  "protein-connects-disease_auc": 0.7970863683662851,
+  "protein-connects-disease_aupr": 0.8094555412415289
+}
