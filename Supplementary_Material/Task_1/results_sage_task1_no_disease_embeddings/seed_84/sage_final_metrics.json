@@ -1,0 +1,7 @@
+{
+  "seed": 84,
+  "test_auc_overall": 0.9094144752705763,
+  "test_aupr_overall": 0.908270389764787,
+  "biomarker-connects-disease_auc": 0.9094144752705763,
+  "biomarker-connects-disease_aupr": 0.908270389764787
+}
