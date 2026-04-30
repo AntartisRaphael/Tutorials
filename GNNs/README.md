@@ -72,7 +72,8 @@ x_n^\top
 \end{bmatrix} \in \mathbb{R}^{n \times d}
 $$
 
-Each row corresponds to one node's features.
+Where each row corresponds to one node's features
+
 ---
 
 ## 4. Common GNN Tasks
@@ -318,6 +319,7 @@ Modern systems (including Netflix today) combine multiple approaches and leverag
   </a>.
   </em>
 </p>
+
 ---
 
 ## 10. Summary
