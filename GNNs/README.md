@@ -33,26 +33,7 @@ where:
 
 ---
 
-## 3. Node Feature Matrix
-
-Each node $u \in V$ can have a feature vector $x_u \in \mathbb{R}^d$ (e.g., age, interests for a person; atom type, charge for a molecule).
-
-All node features are collected into a matrix:
-
-$$
-X = \begin{bmatrix}
-x_1^\top \\
-x_2^\top \\
-\vdots \\
-x_n^\top
-\end{bmatrix} \in \mathbb{R}^{n \times d}
-$$
-
-Each row corresponds to one node's features.
-
----
-
-## 4. What is a Graph Neural Network?
+## 3. Graph Neural Networks and Node Features
 
 A **Graph Neural Network (GNN)** learns from graph-structured data.
 
@@ -69,9 +50,32 @@ A **Graph Neural Network (GNN)** learns from graph-structured data.
 <p align="center">
   <em><strong>Figure 1:</strong> Message passing in a Graph Neural Network. Each node aggregates information from its neighbors to update its representation.</em>
 </p>
+
 ---
 
-## 5. Common GNN Tasks
+To perform this aggregation, each node is associated with a feature vector.
+
+Each node $u \in V$ has a feature vector $x_u \in \mathbb{R}^d$.
+
+Examples:
+- Social networks → age, interests  
+- Molecules → atom type, charge  
+
+All node features are collected into a matrix:
+
+$$
+X = \begin{bmatrix}
+x_1^\top \\
+x_2^\top \\
+\vdots \\
+x_n^\top
+\end{bmatrix} \in \mathbb{R}^{n \times d}
+$$
+
+Each row corresponds to one node's features.
+---
+
+## 4. Common GNN Tasks
 
 Graph Neural Networks can be applied to different types of prediction tasks depending on what we want to learn from the graph.
 
@@ -103,7 +107,7 @@ Graph Neural Networks can be applied to different types of prediction tasks depe
 
 ---
 
-## 6. Message Passing: The GCN Layer
+## 5. Message Passing: The GCN Layer
 
 A **Graph Convolutional Network (GCN)** layer updates all node embeddings as:
 
@@ -132,7 +136,7 @@ After multiple layers, nodes capture **local + global structure**.
 
 ---
 
-## 7. Making Predictions: The Decoder
+## 6. Making Predictions: The Decoder
 
 Once we have final node embeddings $Z = H^{(K)}$ (rows $z_u$, $z_v$), we can make predictions.
 
@@ -152,7 +156,7 @@ where:
 
 ---
 
-## 8. Complete Pipeline
+## 7. Complete Pipeline
 
 | Step | Operation | Purpose |
 |------|-----------|---------|
@@ -264,7 +268,7 @@ print(f"Link probability (0,2): {score.item():.4f}")
 ```
 ---
 
-## 9. CNN vs GNN
+## 8. CNN vs GNN
 
 | Feature | Convolutional Neural Network (CNN) | Graph Neural Network (GNN) |
 |---------|------------------------------------|-----------------------------|
